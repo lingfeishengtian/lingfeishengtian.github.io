@@ -137,6 +137,18 @@ a:hover{text-decoration: none; cursor:pointer;}
 #bloc-2 p{
 	font-size: 30px;
 }
+#bloc-3 h3{
+	font-family: "PT Sans Narrow";
+	font-weight: 700;
+	font-size: 100px;
+	line-height: 100px;
+}
+#bloc-3 h2{
+	font-family: "Josefin Slab";
+}
+#bloc-3 p{
+	font-size: 30px;
+}
 
 /* = NavBar
 -------------------------------------------------------------- */
@@ -311,6 +323,11 @@ button{
 }
 
 
+/* = Icons
+-------------------------------------------------------------- */
+.icon-lg{
+	font-size:60px!important;
+}
 
 
 /* = Text & Icon Styles
@@ -615,6 +632,10 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	font-size: 35px;
 	line-height: 40px;
 }
+#bloc-3 h3{
+	font-size: 35px;
+	line-height: 40px;
+}
 }
 /* Drop Down Navigation */
 @media (min-width: 767px) and (max-width: 991px){
@@ -656,6 +677,10 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	line-height: 40px;
 }
 #bloc-2 h3{
+	font-size: 30px;
+	line-height: 40px;
+}
+#bloc-3 h3{
 	font-size: 30px;
 	line-height: 40px;
 }
