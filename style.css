@@ -93,6 +93,12 @@ a:hover{text-decoration: none; cursor:pointer;}
 	color:rgba(0,0,0,.7);
 	border-color:rgba(0,0,0,.3);
 }
+/* Dividers */
+
+.b-divider{
+	border-top:1px solid rgba(0,0,0,.1);
+	border-bottom:1px solid rgba(0,0,0,.1);
+}
 
 /* Bloc text custom styling */
 
