@@ -111,6 +111,12 @@ a:hover{text-decoration: none; cursor:pointer;}
 	border-color:rgba(0,0,0,.3);
 }
 
+/* Row Margin Offsets */
+
+.voffset-lg{
+	margin-top:80px;
+}
+
 /* Bloc text custom styling */
 
 #bloc-1 h3{
@@ -120,24 +126,18 @@ a:hover{text-decoration: none; cursor:pointer;}
 	line-height: 100px;
 }
 #bloc-1 h2{
-	font-family: "Josefin Slab";
 	font-size: 85px;
+	font-family: "Berkshire Swash";
 }
 #bloc-1 p{
 	font-size: 25px;
 }
-#bloc-2 h3{
-	font-family: "PT Sans Narrow";
-	font-weight: 700;
-	font-size: 100px;
-	line-height: 100px;
-}
 #bloc-2 h2{
-	font-family: "Josefin Slab";
 	font-size: 85px;
+	font-family: "Berkshire Swash";
 }
 #bloc-2 p{
-	font-size: 30px;
+	font-size: 20px;
 }
 #bloc-3 h3{
 	font-family: "PT Sans Narrow";
@@ -150,6 +150,26 @@ a:hover{text-decoration: none; cursor:pointer;}
 	font-size: 85px;
 }
 #bloc-3 p{
+	font-size: 30px;
+}
+#bloc-4 h2{
+	font-size: 85px;
+	font-family: "Berkshire Swash";
+}
+#bloc-4 p{
+	font-size: 20px;
+}
+#bloc-5 h3{
+	font-family: "PT Sans Narrow";
+	font-weight: 700;
+	font-size: 100px;
+	line-height: 100px;
+}
+#bloc-5 h2{
+	font-family: "Josefin Slab";
+	font-size: 85px;
+}
+#bloc-5 p{
 	font-size: 30px;
 }
 
@@ -328,6 +348,9 @@ button{
 
 /* = Icons
 -------------------------------------------------------------- */
+.icon-sm{
+	font-size:18px!important;
+}
 .icon-xl{
 	font-size:100px!important;
 }
@@ -671,11 +694,11 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	font-size: 35px;
 	line-height: 40px;
 }
-#bloc-2 h3{
+#bloc-3 h3{
 	font-size: 35px;
 	line-height: 40px;
 }
-#bloc-3 h3{
+#bloc-5 h3{
 	font-size: 35px;
 	line-height: 40px;
 }
@@ -715,15 +738,27 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
  }
 @media (max-width: 767px){
-	 #bloc-1 h3{
-	font-size: 30px;
-	line-height: 40px;
+	.blocs-team-avatar{
+	max-width:280px;
 }
-#bloc-2 h3{
+.blocs-team-header{
+	text-align:center;
+}
+.blocs-team-details{
+	text-align:center;
+}
+.blocs-team-first-social{
+	margin-left:41%;
+}
+ #bloc-1 h3{
 	font-size: 30px;
 	line-height: 40px;
 }
 #bloc-3 h3{
+	font-size: 30px;
+	line-height: 40px;
+}
+#bloc-5 h3{
 	font-size: 30px;
 	line-height: 40px;
 }
