@@ -172,6 +172,13 @@ a:hover{text-decoration: none; cursor:pointer;}
 #bloc-5 p{
 	font-size: 30px;
 }
+#bloc-6 h2{
+	font-size: 85px;
+	font-family: "Berkshire Swash";
+}
+#bloc-6 p{
+	font-size: 20px;
+}
 
 /* = NavBar
 -------------------------------------------------------------- */
