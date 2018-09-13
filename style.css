@@ -1,5 +1,5 @@
 /*-----------------------------------------------------------------------------------
-	    CCCYouthSite
+	    HoustonCCCYouthWebsite
         Built with Blocs
 -----------------------------------------------------------------------------------*/
 
@@ -122,11 +122,11 @@ a:hover{text-decoration: none; cursor:pointer;}
 	font-size: 100px;
 	line-height: 100px;
 }
+#bloc-1 p{
+	font-size: 25px;
+}
 #bloc-1 h2{
 	font-family: "Josefin Slab";
-}
-#bloc-1 p{
-	font-size: 30px;
 }
 #bloc-2 h3{
 	font-family: "PT Sans Narrow";
@@ -343,6 +343,16 @@ button{
 }
 
 
+/* = Panels
+-------------------------------------------------------------- */
+.panel{
+	border:0;
+	box-shadow: 0 0 2px rgba(0,0,0,.4);
+}
+.panel-heading, .panel-footer{
+	background-color: inherit;
+	border-color: rgba(0,0,0,.1)!important;
+}
 .panel-sq, .panel-sq .panel-heading, .panel-sq .panel-footer{
 	border-radius:0;
 }
@@ -392,6 +402,46 @@ button{
 	margin-left:-15px;
 }
 
+/*
+	Carousel Cross Fade Transition
+*/
+
+.carousel-crossfade .carousel-inner .item {
+	opacity: 0;
+	transition-property: opacity;
+}
+.carousel-crossfade .carousel-inner .active {
+	opacity: 1;
+}
+.carousel-crossfade .carousel-inner .active.left,.carousel-crossfade .carousel-inner .active.right {
+	left: 0;
+	opacity: 0;
+	z-index: 1;
+}
+.carousel-crossfade .carousel-inner .next.left,.carousel-crossfade .carousel-inner .prev.right {
+	opacity: 1;
+}
+.carousel-crossfade .carousel-control {
+	z-index: 2;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+	.carousel-crossfade .carousel-inner > .item.next,.carousel-crossfade .carousel-inner > .item.active.right {
+	opacity: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.carousel-crossfade .carousel-inner > .item.prev,.carousel-crossfade .carousel-inner > .item.active.left {
+	z-index:0;
+	opacity: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.carousel-crossfade .carousel-inner > .item.next.left,.carousel-crossfade .carousel-inner > .item.prev.right,.carousel-crossfade .carousel-inner > .item.active {
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+}
 .no-shadows .carousel-control.left, .no-shadows .carousel-control.right{
 	background-image: none;
 }
@@ -425,6 +475,20 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .container{
 	max-width:1170px;
+}
+.captions{
+	width:484px;
+	margin:16% 16% 16% 16%;
+	padding:0px 0px 0px 0px;
+	height:64px;
+	float:none;
+	background-color:transparent;
+	background-size:10px 10px;
+	border-style:solid;
+	background-repeat:repeat;
+	background-position:left bottom;
+	background-image:url("img/2560x1440-black-solid-color-background.jpg");
+	background:linear-gradient(9deg, #424242, #565656);
 }
 
 /* = Colour
