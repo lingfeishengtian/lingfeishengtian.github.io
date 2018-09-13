@@ -122,11 +122,12 @@ a:hover{text-decoration: none; cursor:pointer;}
 	font-size: 100px;
 	line-height: 100px;
 }
-#bloc-1 p{
-	font-size: 25px;
-}
 #bloc-1 h2{
 	font-family: "Josefin Slab";
+	font-size: 85px;
+}
+#bloc-1 p{
+	font-size: 25px;
 }
 #bloc-2 h3{
 	font-family: "PT Sans Narrow";
@@ -136,6 +137,7 @@ a:hover{text-decoration: none; cursor:pointer;}
 }
 #bloc-2 h2{
 	font-family: "Josefin Slab";
+	font-size: 85px;
 }
 #bloc-2 p{
 	font-size: 30px;
@@ -148,6 +150,7 @@ a:hover{text-decoration: none; cursor:pointer;}
 }
 #bloc-3 h2{
 	font-family: "Josefin Slab";
+	font-size: 85px;
 }
 #bloc-3 p{
 	font-size: 30px;
@@ -343,16 +346,6 @@ button{
 }
 
 
-/* = Panels
--------------------------------------------------------------- */
-.panel{
-	border:0;
-	box-shadow: 0 0 2px rgba(0,0,0,.4);
-}
-.panel-heading, .panel-footer{
-	background-color: inherit;
-	border-color: rgba(0,0,0,.1)!important;
-}
 .panel-sq, .panel-sq .panel-heading, .panel-sq .panel-footer{
 	border-radius:0;
 }
@@ -476,20 +469,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .container{
 	max-width:1170px;
 }
-.captions{
-	width:484px;
-	margin:16% 16% 16% 16%;
-	padding:0px 0px 0px 0px;
-	height:64px;
-	float:none;
-	background-color:transparent;
-	background-size:10px 10px;
-	border-style:solid;
-	background-repeat:repeat;
-	background-position:left bottom;
-	background-image:url("img/2560x1440-black-solid-color-background.jpg");
-	background:linear-gradient(9deg, #424242, #565656);
-}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -504,8 +483,8 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 .tc-outer-space{
 	color:#47454B!important;
-	!important}.tc-ultramarine-blue{
-	color:#424DFF!important;
+	!important}.tc-deep-chestnut{
+	color:#B9473C!important;
 }
 
 /* Bloc image backgrounds */
