@@ -149,6 +149,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 	font-size: 20px;
 	line-height: 30px;
 }
+#bloc-5 h5{
+	font-size: 80px;
+}
 #bloc-6 h3{
 	font-family: "PT Sans Narrow";
 	font-weight: 700;
@@ -340,6 +343,9 @@ nav .caret{
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
 
+.mg-clear{
+	margin:0;
+}
 .mg-sm{
 	margin-top:10px;
 	margin-bottom:5px;
@@ -389,6 +395,9 @@ button{
 }
 .icon-md{
 	font-size:30px!important;
+}
+.icon-lg{
+	font-size:60px!important;
 }
 .icon-xl{
 	font-size:100px!important;
@@ -637,8 +646,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	max-width:1170px;
 }
 .btnmoreinfo{
-	height:398px;
-	padding:10px 10px 10px 10px;
+	padding:27px 27px 27px 27px;
 	text-shadow:0px 0px 0px #000000;
 	font-family:"Abril Fatface";
 	color:transparent!important;
@@ -652,8 +660,18 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	width:578px;
 	float:initial;
 	overflow:visible;
-	margin:6% 6% 6% 6%;
-	max-height:50px;
+	margin:0px 0px 0px 0px;
+	height:81px;
+}
+.titletext{
+	font-family:"Berkshire Swash";
+	color:#B8463C!important;
+	font-style:italic;
+	text-align:center;
+	text-transform:capitalize;
+	text-decoration:underline!important;
+	letter-spacing:2px;
+	padding:14px 14px 14px 14px;
 }
 
 /* = Colour
@@ -853,7 +871,10 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 
 @media (max-width: 991px){
-	 
+	.btnmoreinfo{
+	width:328px;
+}
+ 
 /* Mobile Text Margin Offsets */
 .mg-lg-sm{
 	margin-top: 10px;
@@ -918,6 +939,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .blocs-team-first-social{
 	margin-left:41%;
+}
+.titletext{
+	font-family:"Berkshire Swash";
 }
  #bloc-1 h3{
 	font-size: 30px;
