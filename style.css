@@ -688,6 +688,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 /* Text colour styles */
 
+.tc-black{
+	color:#000000!important;
+}
 .tc-outer-space{
 	color:#47454B!important;
 	!important}.tc-deep-chestnut{
