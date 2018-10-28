@@ -63,6 +63,25 @@ a:hover{text-decoration: none; cursor:pointer;}
 }
 
 
+/* Group Styles */
+
+.bloc-group{
+	display:flex;
+}
+.bloc-tile-2{
+	width:50%;
+}
+.bloc-tile-3{
+	width:33.33333333%;
+}
+.bloc-tile-4{
+	width:25%;
+}
+.bloc-tile-2 .container, .bloc-tile-3 .container, .bloc-tile-4 .container{
+	width:100%;
+}
+
+
 /* Background Styles */
 
 .bg-center,.bg-l-edge,.bg-r-edge,.bg-t-edge,.bg-b-edge,.bg-tl-edge,.bg-bl-edge,.bg-tr-edge,.bg-br-edge,.bg-repeat{
@@ -145,58 +164,64 @@ a:hover{text-decoration: none; cursor:pointer;}
 #bloc-3 p{
 	font-size: 20px;
 }
-#bloc-4 p{
-	font-size: 20px;
-	line-height: 30px;
+#bloc-5 h2{
+	font-family: "Abril Fatface";
 }
-#bloc-5 h5{
+#bloc-5 p{
+	line-height: 20px;
+}
+#bloc-6 h5{
 	font-size: 80px;
 }
-#bloc-6 h3{
+#bloc-7 h3{
 	font-family: "PT Sans Narrow";
 	font-weight: 700;
 	font-size: 100px;
 	line-height: 100px;
 }
-#bloc-6 h2{
+#bloc-7 h2{
 	font-family: "Josefin Slab";
 	font-size: 85px;
 }
-#bloc-6 p{
-	font-size: 30px;
-}
 #bloc-7 p{
-	font-size: 20px;
-}
-#bloc-8 h2{
-	font-family: "Berkshire Swash";
-	font-size: 85px;
+	font-size: 30px;
 }
 #bloc-8 p{
 	font-size: 20px;
 }
-#bloc-9 h3{
+#bloc-9 h2{
+	font-family: "Berkshire Swash";
+	font-size: 85px;
+}
+#bloc-9 p{
+	font-size: 20px;
+}
+#bloc-10 h3{
 	font-family: "PT Sans Narrow";
 	font-weight: 700;
 	font-size: 100px;
 	line-height: 100px;
 }
-#bloc-9 h2{
+#bloc-10 h2{
 	font-family: "Josefin Slab";
 	font-size: 85px;
 }
-#bloc-9 p{
-	font-size: 30px;
-}
 #bloc-10 p{
-	font-size: 20px;
-}
-#bloc-11 h2{
-	font-family: "Berkshire Swash";
-	font-size: 85px;
+	font-size: 30px;
 }
 #bloc-11 p{
 	font-size: 20px;
+}
+#bloc-12 h2{
+	font-family: "Berkshire Swash";
+	font-size: 85px;
+}
+#bloc-12 p{
+	font-size: 20px;
+}
+#bloc-13 h3{
+	font-family: Lobster;
+	font-size: 50px;
 }
 
 /* = NavBar
@@ -378,9 +403,6 @@ button{
 	outline: none!important;
 }
 
-.btn-rd{
-	border-radius: 40px;
-}
 .btn-clean{
 	border:1px solid rgba(0,0,0,.08);
 	border-bottom-color:rgba(0,0,0,.1);
@@ -429,7 +451,25 @@ button{
 	text-shadow:0 1px 0 #ccc,0 2px 0 #c9c9c9,0 3px 0 #bbb,0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25),0 20px 20px rgba(0,0,0,.15);
 }
 
+/* = Lists
+-------------------------------------------------------------- */
+.list-sp-md li{
+	padding-bottom:10px;
+}
+.list-sp-md li:last-child,.list-sp-lg li:last-child,.list-sp-xl li:last-child{
+	padding-bottom:0;
+}
 
+/* = Panels
+-------------------------------------------------------------- */
+.panel{
+	border:0;
+	box-shadow: 0 0 2px rgba(0,0,0,.4);
+}
+.panel-heading, .panel-footer{
+	background-color: inherit;
+	border-color: rgba(0,0,0,.1)!important;
+}
 .panel-sq, .panel-sq .panel-heading, .panel-sq .panel-footer{
 	border-radius:0;
 }
@@ -673,6 +713,21 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	letter-spacing:2px;
 	padding:14px 14px 14px 14px;
 }
+.statement-bloc-text{
+	line-height:38px;
+	font-style:italic;
+	font-size:28px;
+	text-align:center;
+	font-weight:lighter;
+}
+.bloc-group-text-vc{
+	font-size:50px;
+	margin-top:20%;
+}
+.personexpensesclass{
+	width:384px;
+	font-family:"Abril Fatface";
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -877,6 +932,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	.btnmoreinfo{
 	width:328px;
 }
+.bloc-group-text-vc{
+	margin-top:0%;
+}
  
 /* Mobile Text Margin Offsets */
 .mg-lg-sm{
@@ -887,11 +945,11 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	font-size: 35px;
 	line-height: 40px;
 }
-#bloc-6 h3{
+#bloc-7 h3{
 	font-size: 35px;
 	line-height: 40px;
 }
-#bloc-9 h3{
+#bloc-10 h3{
 	font-size: 35px;
 	line-height: 40px;
 }
@@ -946,15 +1004,18 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .titletext{
 	font-family:"Berkshire Swash";
 }
+.bloc-group-text-vc{
+	margin-top:0%;
+}
  #bloc-1 h3{
 	font-size: 30px;
 	line-height: 40px;
 }
-#bloc-6 h3{
+#bloc-7 h3{
 	font-size: 30px;
 	line-height: 40px;
 }
-#bloc-9 h3{
+#bloc-10 h3{
 	font-size: 30px;
 	line-height: 40px;
 }
