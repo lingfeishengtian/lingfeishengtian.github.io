@@ -25,7 +25,6 @@ const Home = () => {
       {/* Navigation */}
       <div className="mt-16 flex space-x-8">
         <a href="/blog" className="text-blue-400 hover:text-blue-300 transition-colors duration-300">Blog</a>
-        <a href="/about" className="text-blue-400 hover:text-blue-300 transition-colors duration-300">About</a>
       </div>
     </div>
   );
