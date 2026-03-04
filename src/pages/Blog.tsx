@@ -28,25 +28,28 @@ const Blog = () => {
 
         <div className="space-y-4">
           {blogPages.map((page) => (
-            <article
-              key={page.id}
-              className="rounded-lg border border-zinc-800 bg-zinc-900/40 p-5"
-            >
-              <div className="flex flex-wrap items-baseline justify-between gap-4">
-                <h2 className="text-xl font-semibold text-blue-400">{page.title}</h2>
-                {page.available ? (
-                  <Link
-                    to={page.path}
-                    className="text-sm text-blue-300 hover:text-blue-200 transition-colors duration-200"
-                  >
-                    Open page
-                  </Link>
-                ) : (
+            page.available ? (
+              <Link key={page.id} to={page.path} className="block">
+                <article className="rounded-lg border border-zinc-800 bg-zinc-900/40 p-5 hover:border-zinc-700 transition-colors duration-200">
+                  <div className="flex flex-wrap items-baseline justify-between gap-4">
+                    <h2 className="text-xl font-semibold text-blue-400">{page.title}</h2>
+                    <span className="text-sm text-blue-300">Open page</span>
+                  </div>
+                  <p className="text-gray-300 mt-2">{page.summary}</p>
+                </article>
+              </Link>
+            ) : (
+              <article
+                key={page.id}
+                className="rounded-lg border border-zinc-800 bg-zinc-900/40 p-5"
+              >
+                <div className="flex flex-wrap items-baseline justify-between gap-4">
+                  <h2 className="text-xl font-semibold text-blue-400">{page.title}</h2>
                   <span className="text-sm text-gray-500">Coming soon</span>
-                )}
-              </div>
-              <p className="text-gray-300 mt-2">{page.summary}</p>
-            </article>
+                </div>
+                <p className="text-gray-300 mt-2">{page.summary}</p>
+              </article>
+            )
           ))}
         </div>
       </div>
