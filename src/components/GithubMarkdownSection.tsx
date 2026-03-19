@@ -14,6 +14,7 @@ interface GithubMarkdownSectionProps {
   description: string;
   markdown: string;
   wikiBaseUrl: string;
+  relativePathBaseUrl?: string;
 }
 
 let mermaidInitialized = false;
@@ -65,7 +66,6 @@ const markdownComponents: Components = {
     if (className?.includes('language-mermaid')) {
       return <MermaidBlock chart={String(children).replace(/\n$/, '')} />;
     }
-
     return (
       <code className={className} {...props}>
         {children}
@@ -79,6 +79,7 @@ const GithubMarkdownSection = ({
   url,
   markdown,
   wikiBaseUrl,
+  relativePathBaseUrl,
 }: GithubMarkdownSectionProps) => {
   return (
     <article className="rounded-lg border border-zinc-800 bg-zinc-900/40 p-5">
@@ -98,7 +99,7 @@ const GithubMarkdownSection = ({
           remarkPlugins={[remarkGfm, remarkMath, remarkGithubBlockquoteAlert]}
           rehypePlugins={[rehypeRaw, rehypeKatex]}
           components={markdownComponents}
-          urlTransform={(urlValue) => normalizeWikiUrl(urlValue, wikiBaseUrl)}
+          urlTransform={(urlValue) => normalizeWikiUrl(urlValue, wikiBaseUrl, relativePathBaseUrl)}
         >
           {markdown}
         </ReactMarkdown>

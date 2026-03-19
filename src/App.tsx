@@ -5,6 +5,7 @@ import Home from './pages/Home';
 const Blog = lazy(() => import('./pages/Blog'));
 const FilenFotoBlog = lazy(() => import('./pages/FilenFotoBlog'));
 const CJEDictionaryBlog = lazy(() => import('./pages/CJEDictionaryBlog'));
+const EncryptedAssetDecryptionBlog = lazy(() => import('./pages/EncryptedAssetDecryptionBlog'));
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/filenfoto" element={<FilenFotoBlog />} />
               <Route path="/blog/cje-dictionary" element={<CJEDictionaryBlog />} />
+              <Route path="/blog/encrypted-asset-decryption" element={<EncryptedAssetDecryptionBlog />} />
             </Routes>
           </Suspense>
         </main>

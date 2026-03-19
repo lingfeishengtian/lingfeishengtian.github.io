@@ -14,6 +14,13 @@ const blogPages = [
     summary: 'Japanese-focused dictionary parsing notes and implementation details.',
     path: '/blog/cje-dictionary',
     available: true,
+  },
+  {
+    id: 'encrypted-asset-decryption',
+    title: 'EncryptedAssetDecryptionExample',
+    summary: 'Reverse engineering, asset decryption, and runtime analysis of an iOS app with encrypted assets.',
+    path: '/blog/encrypted-asset-decryption',
+    available: true,
   }
 ];
 

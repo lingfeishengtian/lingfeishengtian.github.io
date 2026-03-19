@@ -13,15 +13,23 @@ export const generateDescription = (markdown: string, maxLength = 180): string =
     : description;
 };
 
-export const normalizeWikiUrl = (url: string, wikiBaseUrl = filenFotoWikiBaseUrl): string => {
+export const normalizeWikiUrl = (
+  url: string,
+  wikiBaseUrl = filenFotoWikiBaseUrl,
+  relativePathBaseUrl?: string
+): string => {
   if (!url) return url;
   if (url.startsWith('http://') || url.startsWith('https://') || url.startsWith('mailto:')) {
     return url;
   }
+  if (relativePathBaseUrl) {
+    // Use the custom base for relative paths
+    const cleanUrl = url.replace(/^\.?\/?/, '');
+    return relativePathBaseUrl.replace(/\/?$/, '/') + cleanUrl;
+  }
   if (url.startsWith('/')) {
     return `https://github.com${url}`;
   }
-
   return `${wikiBaseUrl}/${url.replace(/^\.\//, '')}`;
 };
 
